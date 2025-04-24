@@ -54,44 +54,45 @@
         app:layout_constraintStart_toStartOf="@id/lVrGlInput"
         app:layout_constraintTop_toTopOf="@+id/tHrGlInput" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addBtn"
         android:layout_width="95dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#5FFD53"
+        android:layout_height="95dp"
+        android:background="@drawable/add_button"
         android:text="+"
         android:textColor="@color/black"
         android:textSize="40sp"
-        android:paddingBottom="14dp"
-        android:paddingRight="23dp"
+        android:paddingBottom="6dp"
+        android:paddingRight="1dp"
         android:layout_marginLeft="145dp"
         app:layout_constraintBottom_toBottomOf="@+id/tHrGlRButton"
         app:layout_constraintEnd_toEndOf="@+id/rVrGlWhiteBox"
         app:layout_constraintStart_toStartOf="@+id/lVrGlWhiteBox"
         app:layout_constraintTop_toTopOf="@+id/bHrGlInput" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/minusBtn"
         android:layout_width="95dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#FF7B7B"
+        android:layout_height="95dp"
+        android:background="@drawable/minus_button"
         android:text="-"
         android:textColor="@color/black"
         android:textSize="40sp"
-        android:paddingBottom="13dp"
-        android:paddingRight="22dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="1dp"
         android:layout_marginRight="145dp"
         app:layout_constraintBottom_toBottomOf="@+id/tHrGlRButton"
         app:layout_constraintEnd_toEndOf="@+id/rVrGlWhiteBox"
         app:layout_constraintStart_toStartOf="@+id/lVrGlWhiteBox"
         app:layout_constraintTop_toTopOf="@+id/bHrGlInput" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/resetBtn"
         android:layout_width="125dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#6A6A6A"
+        android:layout_height="55dp"
+        android:background="@drawable/reset_button"
         android:fontFamily="serif-monospace"
+        android:textColor="@color/reset_text_color"
         android:text="RESET"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -100,14 +101,14 @@
         app:layout_constraintStart_toStartOf="@+id/lVrGlRQButton"
         app:layout_constraintTop_toTopOf="@+id/tHrGlRButton" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/quitBtn"
         android:layout_width="130dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#faf9f6"
+        android:layout_height="55dp"
+        android:background="@drawable/quit_button"
         android:fontFamily="serif-monospace"
         android:text="QUIT"
-        android:textColor="#6a6a6a"
+        android:textColor="@color/quit_text_color"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/bHrGlQButton"

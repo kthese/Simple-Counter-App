@@ -6,8 +6,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.appcompat.app.AlertDialog
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +44,24 @@ class MainActivity : AppCompatActivity() {
         }
 
         // quit button
-        findViewById<Button>(R.id.quitBtn).setOnClickListener{ finishAffinity() }
+        findViewById<Button>(R.id.quitBtn).setOnClickListener{
+            val dialogView = layoutInflater.inflate(R.layout.alert_dialog, null)
+            val dialog = AlertDialog.Builder(this)
+                .setView(dialogView)
+                .create()
+
+            val yesBtn = dialogView.findViewById<Button>(R.id.btnYes)
+            val noBtn = dialogView.findViewById<Button>(R.id.btnNo)
+
+            yesBtn.setOnClickListener {
+                dialog.dismiss()
+                finishAffinity()
+            }
+
+            noBtn.setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.show()
+        }
     }
 }
