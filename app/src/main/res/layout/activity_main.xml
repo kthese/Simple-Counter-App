@@ -33,9 +33,8 @@
         android:id="@+id/topBox"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginBottom="105dp"
         android:background="@drawable/phone"
-        app:layout_constraintBottom_toTopOf="@+id/middleBox"
+        app:layout_constraintBottom_toTopOf="@+id/bHrGlTitle"
         app:layout_constraintEnd_toEndOf="@+id/rVrGlWhiteBox"
         app:layout_constraintStart_toStartOf="@+id/lVrGlWhiteBox" />
 
