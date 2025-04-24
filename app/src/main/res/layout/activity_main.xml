@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF4D9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bottomBox"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/phone"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlWhiteBox"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlQButton" />
+
+    <TextView
+        android:id="@+id/middleBox"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/phone"
+        android:layout_marginBottom="-155dp"
+        android:layout_marginTop="-140dp"
+        app:layout_constraintBottom_toTopOf="@+id/tHrGlQButton"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlWhiteBox"
+        app:layout_constraintTop_toBottomOf="@+id/bHrGlTitle" />
+
+    <TextView
+        android:id="@+id/topBox"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/phone"
+        app:layout_constraintBottom_toTopOf="@+id/middleBox"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlWhiteBox" />
+
+    <TextView
+        android:id="@+id/counterView"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/bHrGlInput"
+        app:layout_constraintEnd_toEndOf="@id/rVrGlInput"
+        app:layout_constraintStart_toStartOf="@id/lVrGlInput"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlInput" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#5FFD53"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:paddingBottom="14dp"
+        android:paddingRight="23dp"
+        android:layout_marginLeft="145dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tHrGlRButton"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlWhiteBox"
+        app:layout_constraintTop_toTopOf="@+id/bHrGlInput" />
+
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#FF7B7B"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:paddingBottom="13dp"
+        android:paddingRight="22dp"
+        android:layout_marginRight="145dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tHrGlRButton"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlWhiteBox"
+        app:layout_constraintTop_toTopOf="@+id/bHrGlInput" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#6A6A6A"
+        android:fontFamily="serif-monospace"
+        android:text="RESET"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/bHrGlRButton"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlRQButton"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlRQButton"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlRButton" />
+
+    <Button
+        android:id="@+id/quitBtn"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#faf9f6"
+        android:fontFamily="serif-monospace"
+        android:text="QUIT"
+        android:textColor="#6a6a6a"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bHrGlQButton"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlRQButton"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlRQButton"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlQButton" />
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:gravity="center"
+        android:text="Counter"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bHrGlTitle"
+        app:layout_constraintEnd_toEndOf="@+id/rVrGlWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/lVrGlWhiteBox"
+        app:layout_constraintTop_toTopOf="@+id/tHrGlTitle" />
+
+
+    <!-- GUIDELINES -->
+    <!-- white box design guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lVrGlWhiteBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rVrGlWhiteBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99"/>
+
+    <!-- title guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.087"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.176" />
+
+
+    <!-- input guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.233"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.39"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lVrGlInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.213"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rVrGlInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78"/>
+
+    <!-- reset and quit button guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lVrGlRQButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.335"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rVrGlRQButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66"/>
+
+    <!-- reset button -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlRButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlRButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.659"/>
+
+    <!-- quit button -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tHrGlQButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.805"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bHrGlQButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.883"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
